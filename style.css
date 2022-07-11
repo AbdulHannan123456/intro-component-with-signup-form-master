@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+
+body {
+    background: hsla(0, 100%, 74%, 0.856)  url("./images/bg-intro-mobile.png");
+    background-size: cover;
+    padding: 85px 13px 15px 13px;   
+}
+
+
+body > * > * {
+    margin: 18px 0.7rem;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0px 0 25px 0;
+}
+
+div {
+    background: hsl(246, 76%, 64%);
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 7px 0 0 hsla(0, 0%, 0%, 0.185);
+}
+
+#main-form {
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 0.185);
+}
+
+#main-form > * {
+    margin: 10px 0;
+}
+
+#main-form > input[type="button"] {
+    background: hsl(154, 59%, 51%);
+    color: #fff;
+    border: none;
+    border-bottom: 4px hsl(154, 46%, 48%) solid;
+    font-weight: 500;
+}
+
+#main-form > input {
+    padding: 14px 18px;
+    border-radius: 5px;
+    border: 2px solid rgb(233, 233, 233);
+    font-weight: 600;
+    color: #000;
+}
+
+#main-form p {
+    color: rgb(207, 206, 206);
+    font-size: 0.75rem;
+    font-weight: bolder;
+    margin: 0 19px 15px 19px;
+}
+
+#main-form a {
+    color: hsl(0, 100%, 74%) ;
+    font-size: 0.75rem;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    
+    body {
+        display: grid;
+        background-size: 25%;
+        grid: "header main" 
+              "header footer" / 49% 51%;
+        align-items: center;
+        margin: 9% 10%;
+        padding: 0;
+    }
+    
+    header {
+         grid-area: header;
+    }
+
+    header > h1 {
+        font-size: 3.1rem;
+        line-height: 3.1rem;
+        text-align: left;
+        margin: 0 5% 0 0%;
+    }
+
+    header > p {
+        margin: 0 5% 0 0%;
+        text-align: left;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #main-form {
+        padding: 30px 40px;
+    }
+
+    #main-form > input {
+        padding: 14px 35px;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
